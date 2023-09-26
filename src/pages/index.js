@@ -1,8 +1,15 @@
-import React from "react"
+import Head from 'next/head'
+import React from 'react'
+import Home from 'src/Components/Home/Home'
 
-const Home = ()=> {
-  return(
-    <div><h1>Hola</h1></div>
+const Index = () => {
+  return (
+    <>
+      <Head>
+        <title>Inicio | Tajamar</title>
+      </Head>
+      <Home />
+    </>
   )
 }
-export default Home
+export default Index
