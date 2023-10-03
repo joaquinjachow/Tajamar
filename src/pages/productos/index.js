@@ -1,10 +1,10 @@
-// import Productos from 'src/Components/Productos/Productos'
+import Productos from 'src/Components/Productos/Productos'
 
 const index = () => {
   return (
     <main>
       <title>Productos | Tajamar</title>
-      {/* <Productos /> */}
+      <Productos />
     </main>
   )
 }

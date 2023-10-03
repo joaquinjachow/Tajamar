@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import Maderas from '../MaderaProductos/Maderas'
 import Navbar from '../Navbar/Navbar'
 import Footer from '../Footer/Footer'
@@ -8,12 +9,13 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import SwiperCore, { Navigation } from 'swiper'
 import 'swiper/swiper.min.css'
 import 'swiper/swiper-bundle.min.css'
-import Image from 'next/image'
+import { useRouter } from 'next/router'
 
 export default function Detail () {
   SwiperCore.use([Navigation])
-  // const { link } = useParams()
-  const madera = Maderas.find((el) => el.Link === Link)
+  const router = useRouter()
+  const { link } = router.query
+  const madera = Maderas.find((el) => el.link === link)
   if (!madera) {
     return (
       <>
@@ -23,11 +25,10 @@ export default function Detail () {
       </>
     )
   }
-
   return (
     <>
       <div className='bg-fixed bg-center bg-cover bg-ProductosFondo'>
-        {/* <Navbar /> */}
+        <Navbar />
         <h1 className='pb-6 text-5xl font-bold text-center text-white whitespace-nowrap md:pb-8 md:text-7xl lg:text-start lg:pt-8 xl:pt-16 xl:pb-16 lg:ml-20 xl:ml-36 2xl:ml-52'>{madera.name}</h1>
       </div>
       <div className='container mx-auto mt-4 md:mt-12 md:mb-12'>
@@ -51,7 +52,7 @@ export default function Detail () {
             </p>
             <div className='flex items-end justify-end mt-5'>
               <Link href='/productos'>
-                <button className='bg-[#98694C] btn w-20 hover:bg-[#EBC095] hover:text-black'><AiOutlineArrowLeft /></button>
+                <a className='bg-[#98694C] btn w-20 hover:bg-[#EBC095] hover:text-black'><AiOutlineArrowLeft /></a>
               </Link>
             </div>
           </div>

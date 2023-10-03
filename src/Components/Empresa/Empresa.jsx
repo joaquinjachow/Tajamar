@@ -16,7 +16,7 @@ export default function Empresa () {
           <h1 className='pb-6 text-5xl font-bold text-center text-white whitespace-nowrap md:pb-8 md:text-7xl lg:text-start lg:pt-8 xl:pt-16 xl:pb-16 lg:ml-20 xl:ml-36 2xl:ml-72'>La Empresa</h1>
         </div>
       </div>
-      <main data-aos='fade-right' className='flex flex-col justify-center gap-5 px-6 mb-12 leading-relaxed md:flex-row md:mt-20 md:gap-20'>
+      <main data-aos='fade-right' className='flex flex-col justify-center gap-5 px-6 mb-12 leading-relaxed text-black md:flex-row md:mt-20 md:gap-20'>
         <div className='flex flex-col w-auto md:w-80 xl:h-[500px]'>
           <h1 className='mt-4 mb-3 text-3xl font-semibold text-center text-yellow-400 md:mt-0'>VISIÓN</h1>
           <p className='text-justify'>Nuestro objetivo como empresa es que todos nuestros productos reflejen nuestro valor como marca. <br />

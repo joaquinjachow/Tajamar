@@ -5,20 +5,20 @@ import Footer from '../Footer/Footer'
 export default function Contacto () {
   return (
     <>
-      <div className='relative bg-center bg-ContactoFondo'>
+      <div className='relative bg-center bg-cover bg-ContactoFondo'>
         <div className='relative bg-black bg-opacity-30'>
           <Navbar />
           <h1 className='pb-6 text-5xl font-bold text-center text-white whitespace-nowrap md:pb-8 md:text-7xl lg:text-start lg:pt-8 xl:pt-16 xl:pb-16 lg:ml-20 xl:ml-36 2xl:ml-96'>Contacto</h1>
         </div>
       </div>
-      <main className='mx-2 lg:ml-[10%] 2xl:ml-[20%] md:grid md:max-w-5xl md:grid-cols-2 md:ml-2 md:mt-4'>
+      <main className='mx-2 lg:ml-[10%] 2xl:ml-[20%] md:grid md:max-w-5xl md:grid-cols-2 md:ml-2 md:mt-4 text-black'>
         <div className='col-span-2 xl:mb-10'>
           <form action='https://getform.io/f/e13bf14d-eb9f-4ae8-8b65-af75c870b4ce' method='POST' className='grid grid-cols-2 grid-rows-4 gap-2 p-2 text-lg md:gap-4 md:p-5'>
             <input type='text' placeholder='Nombre' name='name' className='col-span-1 row-span-1 pl-3 bg-[#E1D5BE] rounded-sm' />
             <textarea placeholder='Mensaje' name='message' className='col-span-1 row-span-3 pl-4 pt-2 bg-[#E1D5BE] rounded-sm' />
             <input type='email' placeholder='Correo Electronico' name='email' className='col-span-1 row-span-1 pl-3 bg-[#E1D5BE] rounded-sm' />
             <input type='text' placeholder='Empresa' name='enterprise' className='col-span-1 row-span-1 pl-3 bg-[#E1D5BE] rounded-sm' />
-            <button type='submit' className='btn bg-[#766A5D] col-span-2 hover:bg-[#E1D5BE]'>Enviar</button>
+            <button type='submit' className='btn bg-[#766A5D] col-span-2 hover:bg-[#E1D5BE] text-white'>Enviar</button>
           </form>
         </div>
         <div className='flex flex-col p-2 pb-4 text-xl md:text-2xl 2xl:ml-8'>
