@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-// import Navbar from '../Navbar/Navbar'
+import Navbar from '../Navbar/Navbar'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
@@ -12,7 +12,7 @@ const Home = () => {
     <div className='relative'>
       <div className='relative inset-0 bg-cover bg-MaderaFondo'>
         <div className='min-h-screen bg-black backdrop-blur-sm bg-opacity-30'>
-          {/* <Navbar /> */}
+          <Navbar />
           <main className='flex flex-col items-center text-center text-white'>
             <h1 className='my-12 text-5xl font-bold tracking-tighter sm:text-6xl md:text-7xl xl:leading-snug xl:text-7xl 2xl:leading-snug 2xl:text-8xl'>
               Bienvenido a <br /> Tajamar Molduras
