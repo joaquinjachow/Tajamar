@@ -21,12 +21,12 @@ export default function Productos () {
         <div className='flex flex-col gap-4 p-4 md:grid md:grid-cols-3 gap-y-10 '>
           {Maderas.map((el) => {
             return (
-              <Link href={'/' + el.link} key={el.name}>
+              <Link href={'/' + el?.link} key={el?.name}>
                 <div className='flex justify-center'>
                   <Card
-                    name={el.name}
-                    img={el.image}
-                    link={el.link}
+                    name={el?.name}
+                    img={el?.image}
+                    link={el?.link}
                   />
                 </div>
               </Link>

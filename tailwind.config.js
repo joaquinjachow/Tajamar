@@ -8,10 +8,10 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        MaderaFondo: 'url(/images/HomeFondo.jpg)',
-        EmpresaFondo: 'url(/images/EmpresaFondo.jpg)',
-        ProductosFondo: 'url(/images/ProductosFondo.jpg)',
-        ContactoFondo: 'url(/images/ContactoFondo.webp)'
+        MaderaFondo: 'url(/backgroundImages/HomeFondo.jpg)',
+        EmpresaFondo: 'url(/backgroundImages/EmpresaFondo.jpg)',
+        ProductosFondo: 'url(/backgroundImages/ProductosFondo.jpg)',
+        ContactoFondo: 'url(/backgroundImages/ContactoFondo.webp)'
       },
       fontFamily: {
         serif: ['Playfair Display', 'serif']

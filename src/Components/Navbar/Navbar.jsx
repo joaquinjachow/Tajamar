@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Logo from '../../assets/logo.png'
+import Logo from '../../../public/assets/logo.png'
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -10,7 +10,7 @@ export default function Nabvar () {
   return (
     <>
       <nav>
-        <div className='flex flex-wrap items-center justify-between max-w-screen-xl p-4 mx-auto'>
+        <div className='flex items-center justify-between max-w-screen-xl p-4 mx-auto'>
           <Link href='/' className='flex'>
             <Image src={Logo} width={271} height={56} className='md:h-14' alt='Logo-Tajamar-Molduras' />
           </Link>

@@ -11,7 +11,7 @@ export default function Card ({ name, img, link }) {
           <figure>
             <motion.img
               className='w-full h-full bg-center bg-cover max-h-64 rounded-t-2xl'
-              src={img}
+              src={img?.src}
               alt={img}
               onMouseEnter={() => setIsHovered(true)}
               onMouseLeave={() => setIsHovered(false)}
