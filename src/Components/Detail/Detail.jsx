@@ -44,11 +44,11 @@ export default function Detail () {
           <div className='w-full md:w-1/2 md:max-h-[700px]'>
             <div className='h-80 md:h-[700px] relative flex items-center'>
               <button onClick={prevImage} className='absolute left-0 p-2 bg-[#98694C] hover:bg-[#EBC095] bg-opacity-25 rounded-full'>
-                <AiOutlineArrowLeft size={22} color='#ffffff' />
+                <AiOutlineArrowLeft size={28} color='#ffffff' />
               </button>
               <Image src={images[currentImage]} alt={madera.name} className='object-cover w-full h-full' />
               <button onClick={nextImage} className='absolute right-0 p-2 bg-[#98694C] hover:bg-[#EBC095] bg-opacity-25 rounded-full'>
-                <AiOutlineArrowRight size={22} color='#ffffff' />
+                <AiOutlineArrowRight size={28} color='#ffffff' />
               </button>
             </div>
           </div>

@@ -15,7 +15,7 @@ export default function Nabvar () {
             <Image src={Logo} width={271} height={56} className='md:h-14' alt='Logo-Tajamar-Molduras' />
           </Link>
           <div className='hidden w-full md:block md:w-auto' id='navbar-default'>
-            <ul className='flex flex-col p-4 mt-4 font-medium border border-gray-100 rounded-lg md:p-0 bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700'>
+            <ul className='flex flex-col p-4 mt-4 text-lg font-medium border border-gray-100 rounded-lg md:p-0 bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700'>
               <Link href='/'><li><button className='block py-2 pl-3 pr-4 text-gray-900 rounded md:text-white hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 md:hover:text-yellow-400' aria-current='page' href='#'>Inicio</button></li></Link>
               <Link href='/empresa'><li><button className='block py-2 pl-3 pr-4 text-gray-900 rounded md:text-white hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 md:hover:text-yellow-400' href='#'>Empresa</button></li></Link>
               <Link href='/productos'><li><button className='block py-2 pl-3 pr-4 text-gray-900 rounded md:text-white hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 md:hover:text-yellow-400' href='#'>Productos</button></li></Link>
