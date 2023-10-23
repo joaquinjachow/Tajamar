@@ -43,11 +43,11 @@ const Detail = () => {
         <div className='flex flex-col mx-2 md:flex-row'>
           <div className='w-full md:w-1/2 md:max-h-[700px]'>
             <div className='h-80 md:h-[700px] relative flex items-center'>
-              <button onClick={prevImage} className='absolute left-0 p-2 bg-[#98694C] hover:bg-[#EBC095] bg-opacity-25 rounded-full'>
+              <button onClick={prevImage} className='absolute left-0 p-2 bg-opacity-25 rounded-full bg-wood hover:bg-yellow-450'>
                 <AiOutlineArrowLeft size={28} color='#ffffff' />
               </button>
               <Image src={images[currentImage]} alt={madera.name} className='object-cover w-full h-full' />
-              <button onClick={nextImage} className='absolute right-0 p-2 bg-[#98694C] hover:bg-[#EBC095] bg-opacity-25 rounded-full'>
+              <button onClick={nextImage} className='absolute right-0 p-2 bg-opacity-25 rounded-full bg-wood hover:bg-yellow-450'>
                 <AiOutlineArrowRight size={28} color='#ffffff' />
               </button>
             </div>
@@ -58,7 +58,7 @@ const Detail = () => {
             </p>
             <div className='flex items-end justify-end mt-5'>
               <Link href='/productos'>
-                <button className='bg-[#98694C] btn w-20 hover:bg-[#EBC095] hover:text-black'><AiOutlineArrowLeft /></button>
+                <button className='w-20 btn bg-wood hover:bg-yellow-450 hover:text-black'><AiOutlineArrowLeft /></button>
               </Link>
             </div>
           </div>

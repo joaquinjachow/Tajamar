@@ -14,6 +14,11 @@ module.exports = {
       },
       fontFamily: {
         serif: ['Playfair Display', 'serif']
+      },
+      colors: {
+        wood: '#98694C',
+        'yellow-450': '#EBC095',
+        input: '#E1D5BE'
       }
     }
   },

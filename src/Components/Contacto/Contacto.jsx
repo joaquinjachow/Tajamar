@@ -6,11 +6,11 @@ const Contacto = () => {
       <main className='mx-2 lg:ml-[10%] 2xl:ml-[20%] md:grid md:max-w-5xl md:grid-cols-2 md:ml-2 md:mt-4 text-black'>
         <div className='col-span-2 xl:mb-10'>
           <form action='https://getform.io/f/e13bf14d-eb9f-4ae8-8b65-af75c870b4ce' method='POST' className='grid grid-cols-2 grid-rows-4 gap-2 p-2 text-lg md:gap-4 md:p-5'>
-            <input type='text' placeholder='Nombre' name='name' className='col-span-1 row-span-1 pl-3 bg-[#E1D5BE] rounded-sm' />
-            <textarea placeholder='Mensaje' name='message' className='col-span-1 row-span-3 pl-4 pt-2 bg-[#E1D5BE] rounded-sm' />
-            <input type='email' placeholder='Correo Electronico' name='email' className='col-span-1 row-span-1 pl-3 bg-[#E1D5BE] rounded-sm' />
-            <input type='text' placeholder='Empresa' name='enterprise' className='col-span-1 row-span-1 pl-3 bg-[#E1D5BE] rounded-sm' />
-            <button type='submit' className='btn bg-[#766A5D] col-span-2 hover:bg-[#E1D5BE] text-white'>Enviar</button>
+            <input type='text' placeholder='Nombre' name='name' className='col-span-1 row-span-1 pl-3 rounded-sm bg-input' />
+            <textarea placeholder='Mensaje' name='message' className='col-span-1 row-span-3 pt-2 pl-4 rounded-sm bg-input' />
+            <input type='email' placeholder='Correo Electronico' name='email' className='col-span-1 row-span-1 pl-3 rounded-sm bg-input' />
+            <input type='text' placeholder='Empresa' name='enterprise' className='col-span-1 row-span-1 pl-3 rounded-sm bg-input' />
+            <button type='submit' className='btn bg-[#766A5D] col-span-2 hover:bg-input text-white'>Enviar</button>
           </form>
         </div>
         <div className='flex flex-col p-2 pb-4 text-xl md:text-2xl 2xl:ml-8'>
@@ -19,7 +19,7 @@ const Contacto = () => {
           <h2>tajamarmolduras@gmail.com</h2>
           <h2>Piero Astori 1300</h2>
         </div>
-        <div className='w-full col-span-3 border-t border-[#E1D5BE]' />
+        <div className='w-full col-span-3 border-t border-input' />
         <div className='md:mt-10 relative m-3 w-72 h-52 sm:w-[600px] lg:w-[800px] xl:w-[1050px] lg:h-72 mb-6'>
           <iframe
             className='absolute inset-0 w-full h-full'
