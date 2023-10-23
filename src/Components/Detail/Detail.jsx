@@ -53,7 +53,7 @@ const Detail = () => {
             </div>
           </div>
           <div className='w-full pl-8 mt-8 md:relative md:self-center md:w-1/2 md:border-l-2 md:ml-4'>
-            <p className='text-lg font-normal md:text-xl md:font-medium'>
+            <p className='text-lg font-normal text-black md:text-xl md:font-medium'>
               {madera.description}
             </p>
             <div className='flex items-end justify-end mt-5'>
