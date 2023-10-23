@@ -2,7 +2,7 @@ import React from 'react'
 import { AiOutlineInstagram } from 'react-icons/ai'
 import { BsFacebook } from 'react-icons/bs'
 
-export default function Nabvar () {
+const Footer = () => {
   return (
     <footer className='footer items-center p-4 text-white bg-[#DAA468] flex justify-around'>
       <div className='items-center grid-flow-col'>
@@ -17,3 +17,5 @@ export default function Nabvar () {
     </footer>
   )
 }
+
+export default Footer

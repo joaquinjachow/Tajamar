@@ -7,7 +7,7 @@ import Footer from '../Footer/Footer'
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from 'react-icons/ai'
 import { useRouter } from 'next/router'
 
-export default function Detail () {
+const Detail = () => {
   const router = useRouter()
   const { link } = router.query
   const madera = Maderas?.find((el) => el.link === link)
@@ -70,3 +70,5 @@ export default function Detail () {
     </>
   )
 }
+
+export default Detail

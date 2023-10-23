@@ -4,7 +4,7 @@ import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai'
 import Image from 'next/image'
 import Link from 'next/link'
 
-export default function Nabvar () {
+const Navbar = () => {
   const [open, setOpen] = useState(false)
 
   return (
@@ -44,3 +44,5 @@ export default function Nabvar () {
     </>
   )
 }
+
+export default Navbar

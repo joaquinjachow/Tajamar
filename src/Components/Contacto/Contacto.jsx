@@ -1,16 +1,8 @@
 import React from 'react'
-import Navbar from '../Navbar/Navbar'
-import Footer from '../Footer/Footer'
 
-export default function Contacto () {
+const Contacto = () => {
   return (
     <>
-      <div className='relative bg-center bg-cover bg-ContactoFondo'>
-        <div className='relative bg-black bg-opacity-30'>
-          <Navbar />
-          <h1 className='pb-6 text-5xl font-bold text-center text-white whitespace-nowrap md:pb-8 md:text-7xl lg:text-start lg:pt-8 xl:pt-16 xl:pb-16 lg:ml-20 xl:ml-36 2xl:ml-96'>Contacto</h1>
-        </div>
-      </div>
       <main className='mx-2 lg:ml-[10%] 2xl:ml-[20%] md:grid md:max-w-5xl md:grid-cols-2 md:ml-2 md:mt-4 text-black'>
         <div className='col-span-2 xl:mb-10'>
           <form action='https://getform.io/f/e13bf14d-eb9f-4ae8-8b65-af75c870b4ce' method='POST' className='grid grid-cols-2 grid-rows-4 gap-2 p-2 text-lg md:gap-4 md:p-5'>
@@ -36,7 +28,8 @@ export default function Contacto () {
           />
         </div>
       </main>
-      <Footer />
     </>
   )
 }
+
+export default Contacto

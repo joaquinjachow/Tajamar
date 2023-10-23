@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 
-export default function Card ({ name, img, link }) {
+const Card = ({ name, img, link }) => {
   const [isHovered, setIsHovered] = useState(false)
   return (
     <div data-aos='flip-left' className='shadow-xl card w-96 bg-[#DA9F6D] max-h-96 rounded-2xl'>
@@ -27,3 +27,4 @@ export default function Card ({ name, img, link }) {
     </div>
   )
 }
+export default Card
