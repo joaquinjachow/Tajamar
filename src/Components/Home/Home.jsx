@@ -4,7 +4,6 @@ import 'aos/dist/aos.css'
 
 const Home = () => {
   useEffect(() => {
-    document.title = 'Inicio | Tajamar'
     AOS.init()
   }, [])
   return (

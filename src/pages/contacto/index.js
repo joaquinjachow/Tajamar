@@ -1,10 +1,14 @@
 import Contacto from 'src/Components/Contacto/Contacto'
 import Navbar from 'src/Components/Navbar/Navbar'
 import Footer from 'src/Components/Footer/Footer'
+import Head from 'next/head'
 
 const index = () => {
   return (
     <>
+      <Head>
+        <title>Contacto | Tajamar</title>
+      </Head>
       <div className='relative bg-center bg-cover bg-ContactoFondo'>
         <div className='relative bg-black bg-opacity-30'>
           <Navbar />
@@ -12,7 +16,6 @@ const index = () => {
         </div>
       </div>
       <main>
-        <title>Contacto | Tajamar</title>
         <Contacto />
       </main>
       <Footer />

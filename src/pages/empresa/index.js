@@ -1,10 +1,14 @@
 import Empresa from 'src/Components/Empresa/Empresa'
 import Navbar from 'src/Components/Navbar/Navbar'
 import Footer from 'src/Components/Footer/Footer'
+import Head from 'next/head'
 
 const index = () => {
   return (
     <>
+      <Head>
+        <title>Empresa | Tajamar</title>
+      </Head>
       <div className='relative bg-fixed bg-center bg-cover bg-EmpresaFondo'>
         <div className='relative bg-black bg-opacity-30'>
           <Navbar />
@@ -12,7 +16,6 @@ const index = () => {
         </div>
       </div>
       <main>
-        <title>Empresa | Tajamar</title>
         <Empresa />
       </main>
       <Footer />
