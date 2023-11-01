@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import Productos from 'src/Components/Productos/Productos'
 import Nabvar from 'src/Components/Navbar/Navbar'
 import Footer from 'src/Components/Footer/Footer'
@@ -5,7 +6,9 @@ import Footer from 'src/Components/Footer/Footer'
 const index = () => {
   return (
     <>
-      <title>Productos | Tajamar</title>
+      <Head>
+        <title>Productos | Tajamar</title>
+      </Head>
       <div className='relative bg-fixed bg-center bg-cover bg-ProductosFondo'>
         <div className='relative bg-black bg-opacity-30'>
           <Nabvar />

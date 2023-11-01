@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import Maderas from '../MaderaProductos/Maderas'
@@ -13,6 +13,11 @@ const Detail = () => {
   const madera = Maderas?.find((el) => el.link === link)
   const [currentImage, setCurrentImage] = useState(0)
 
+  useEffect(() => {
+    if (madera) {
+      document.title = `${madera.name} | Tajamar`
+    }
+  }, [madera])
   if (!madera) {
     return (
       <>
