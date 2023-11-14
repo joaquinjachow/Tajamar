@@ -1,17 +1,16 @@
-import React, { useState, useEffect } from 'react'
+import React, { useEffect } from 'react'
 import Link from 'next/link'
-import Image from 'next/image'
 import Maderas from '../MaderaProductos/Maderas'
 import Navbar from '../Navbar/Navbar'
 import Footer from '../Footer/Footer'
-import { AiOutlineArrowLeft, AiOutlineArrowRight } from 'react-icons/ai'
+import { AiOutlineArrowLeft } from 'react-icons/ai'
 import { useRouter } from 'next/router'
+import { CarouselComponent } from '../Carrousel/Carrousel'
 
 const Detail = () => {
   const router = useRouter()
   const { link } = router.query
   const madera = Maderas?.find((el) => el.link === link)
-  const [currentImage, setCurrentImage] = useState(0)
 
   useEffect(() => {
     if (madera) {
@@ -27,17 +26,7 @@ const Detail = () => {
       </>
     )
   }
-
-  const images = [madera?.image, madera?.image1, madera?.image2]
-
-  const nextImage = () => {
-    setCurrentImage((prevImage) => (prevImage + 1) % images.length)
-  }
-
-  const prevImage = () => {
-    setCurrentImage((prevImage) => (prevImage - 1 + images.length) % images.length)
-  }
-
+  console.log(madera)
   return (
     <>
       <div className='bg-fixed bg-center bg-cover bg-ProductosFondo'>
@@ -47,15 +36,7 @@ const Detail = () => {
       <div className='container mx-auto mt-4 md:mt-12 md:mb-12'>
         <div className='flex flex-col mx-2 md:flex-row'>
           <div className='w-full md:w-1/2 md:max-h-[700px]'>
-            <div className='h-80 md:h-[700px] relative flex items-center'>
-              <button onClick={prevImage} className='absolute left-0 p-2 bg-opacity-25 rounded-full bg-wood hover:bg-yellow-450'>
-                <AiOutlineArrowLeft size={28} color='#ffffff' />
-              </button>
-              <Image src={images[currentImage]} alt={madera.name} className='object-cover w-full h-full' />
-              <button onClick={nextImage} className='absolute right-0 p-2 bg-opacity-25 rounded-full bg-wood hover:bg-yellow-450'>
-                <AiOutlineArrowRight size={28} color='#ffffff' />
-              </button>
-            </div>
+            <CarouselComponent image={madera.image} image1={madera.image1} image2={madera.image2} name={madera.name} />
           </div>
           <div className='w-full pl-8 mt-8 md:relative md:self-center md:w-1/2 md:border-l-2 md:ml-4'>
             <p className='text-lg font-normal text-black md:text-xl md:font-medium'>
