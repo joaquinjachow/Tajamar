@@ -24,7 +24,7 @@ const Empresa = () => {
         </div>
         <div className='flex flex-col w-auto md:w-80 xl:h-[500px]'>
           <h1 className='mb-3 text-3xl font-semibold text-center text-[#C09030] '>MISIÓN</h1>
-          <p className='text-justify'>Ser una empresa referente para arquitectos, profesionales de la construcción y distribuidores.
+          <p className='text-justify text-pretty'>Ser una empresa referente para arquitectos, profesionales de la construcción y distribuidores.
             Nos enfocamos en brindar un servicio excepcional a nuestros clientes. Para nosotros, es fundamental que cada cliente se sienta valorado y apreciado, y por eso nos esforzamos por ofrecer un servicio de atención al cliente personalizado y de alta calidad. <br />
             Nuestro equipo de profesionales altamente capacitados está siempre disponible para brindar asesoramiento y orientación a nuestros clientes en todo momento, desde la selección de productos hasta la entrega y la instalación. <br />
           </p>
