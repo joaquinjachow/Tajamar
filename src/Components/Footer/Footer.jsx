@@ -7,6 +7,10 @@ const Footer = () => {
     <footer className='footer items-center p-4 text-white bg-[#DAA468] flex justify-around'>
       <div className='items-center grid-flow-col'>
         <p>Copyright © 2023 - All right reserved - Tajamar Molduras</p>
+        <p className='flex items-center gap-1 mx-auto ml-6 font-medium'>
+          <span>© Made by</span>
+          <a target='_blank' rel='noreferrer' href='https://www.linkedin.com/in/joaquin-jachow/'>Joaquin Jachow</a>
+        </p>
       </div>
       <div className='grid-flow-col gap-4'>
         <ul className='flex items-center gap-3'>
