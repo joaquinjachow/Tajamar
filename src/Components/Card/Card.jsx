@@ -14,6 +14,7 @@ const Card = ({ name, img, link }) => {
                 className='w-full h-full bg-center bg-cover max-h-64 rounded-t-2xl'
                 src={img?.src}
                 alt={img}
+                loading='lazy'
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
                 animate={{ scale: isHovered ? 1.1 : 1 }}
