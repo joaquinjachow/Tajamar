@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import React from 'react'
 import Home from 'src/Components/Home/Home'
-import Nabvar from 'src/Components/Navbar/Navbar'
+import Navbar from 'src/Components/Navbar/Navbar'
 
 const Index = () => {
   return (
@@ -12,7 +12,7 @@ const Index = () => {
       <div className='relative'>
         <div className='relative inset-0 bg-cover bg-MaderaFondo'>
           <div className='min-h-screen bg-black backdrop-blur-sm bg-opacity-30'>
-            <Nabvar />
+            <Navbar />
             <main>
               <Home />
             </main>
