@@ -1,11 +1,8 @@
-import React, { useEffect } from 'react'
-import AOS from 'aos'
-import 'aos/dist/aos.css'
+import React from 'react'
+import useAOS from '../../hooks/useAOS'
 
 const Empresa = () => {
-  useEffect(() => {
-    AOS.init()
-  }, [])
+  useAOS()
   return (
     <>
       <main data-aos='fade-right' className='flex flex-col justify-center gap-5 px-6 mb-12 leading-relaxed text-black md:flex-row md:mt-20 md:gap-20'>
