@@ -1,11 +1,8 @@
-import React, { useEffect } from 'react'
-import AOS from 'aos'
-import 'aos/dist/aos.css'
+import React from 'react'
+import useAOS from '../../hooks/useAOS'
 
 const Home = () => {
-  useEffect(() => {
-    AOS.init()
-  }, [])
+  useAOS()
   return (
     <main className='flex flex-col items-center text-center text-white'>
       <h1 className='my-12 text-5xl font-bold tracking-tighter sm:text-6xl md:text-7xl xl:leading-snug xl:text-7xl 2xl:leading-snug 2xl:text-8xl'>
