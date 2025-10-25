@@ -9,7 +9,7 @@
 
 ## 🚀 Demo en Vivo
 
-**🌐 [Ver sitio web en producción](https://tajamar-molduras.vercel.app)**
+**🌐 [Ver sitio web en producción](https://tajamar.vercel.app/)**
 
 ---
 
@@ -52,7 +52,6 @@
 - **Standard JS** - Estilo de código consistente
 - **PostCSS** - Procesamiento de CSS
 - **Autoprefixer** - Compatibilidad cross-browser
-
 
 ---
 
